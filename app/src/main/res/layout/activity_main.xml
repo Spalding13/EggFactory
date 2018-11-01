@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentPanel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/upper_frame"
+            android:layout_width="match_parent"
+            android:layout_height="135dp" />
+
+        <FrameLayout
+            android:id="@+id/middle_frame"
+            android:layout_width="match_parent"
+            android:layout_height="128dp" />
+
+        <FrameLayout
+            android:id="@+id/lower_frame"
+            android:layout_width="match_parent"
+            android:layout_height="117dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/colorPrimaryDark"
+        />
+    <fragment
+        android:name="com.example.android.eggfactory.MasterListFragment"
+        android:id="@+id/grid_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
